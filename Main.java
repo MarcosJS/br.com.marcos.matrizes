@@ -13,6 +13,10 @@ public class Main {
 		System.out.println("A igualdade entres as matrizes a e b é: "+matriz.eIgual(b));
 		System.out.println("A igualdade entres as matrizes a e c é: "+matriz.eIgual(c));
 		System.out.println("A igualdade entres as matrizes a e d é: "+matriz.eIgual(d));
+		
+		System.out.println("As matrizes a e b são quadradas: "+matriz.eQuadrada(b));
+		System.out.println("As matrizes a e c são quadradas: "+matriz.eQuadrada(c));
+		System.out.println("As matrizes a e d são quadradas: "+matriz.eQuadrada(d));
 	
 	}
 }

@@ -34,4 +34,23 @@ public class MatrizDeDoubles {
 		}
 		return resultado;
 	}
+	
+	boolean eQuadrada(double[][] matriz) {
+		boolean resultado = true;
+		
+		//Verificando se matrizes possuem o mesmo numero de linhas
+		if(this.matriz.length == matriz.length) {
+			for(int i = 0; i < this.matriz.length && resultado; i++) {
+				
+				//Verificando se as linhas possuem o numero de colunas diferente
+				if(this.matriz[i].length != matriz[i].length) {
+					resultado = false;
+				}
+			}
+		} else {
+			resultado = false;
+		}
+		
+		return resultado;
+	}
 }
